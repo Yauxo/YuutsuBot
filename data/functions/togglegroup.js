@@ -41,6 +41,12 @@ var cnt = {
 
 			msg.channel.send('> ' + suffix + ' is now set to [ ' + srvF.groups[suffix] + ' ]');
 		} else { msg.channel.send('> no such group exists'); }
+
+		// Change Nickname depending on uwu Mode
+		switch(srvF.groups.uwu) {
+			case true: msg.guild.me.setNickname("Anekuwu"); break;
+			case false: msg.guild.me.setNickname("Aneko"); break;
+		}
 	},
 };
 
