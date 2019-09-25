@@ -38,8 +38,6 @@ var cnt = {
 			for (var i = 0; i < files.length; i++) {
 				var file = require(path + '\\data\\functions\\' + files[i]);
 
-				console.log(i + ' / ' + files.length + ' - ' + files[i]);
-
 				switch (file.data.perm) {
 					case 0: basic += ('[Basic] ' + file.data.name + '\n'); break;
 					case 1: moderative += ('[Moderative] ' + file.data.name + '\n'); break;
