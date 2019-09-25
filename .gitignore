@@ -1,0 +1,8 @@
+# Authentification File with Bot Token
+auth.json
+data/cleverbot.js
+
+# Serverlist
+data/server_data/*
+!data/server_data/.gitignore
+!data/server_data/x_Base.json
